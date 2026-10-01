@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FREE FIRE TOURNAMENTS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">🔥 FREE FIRE TOURNAMENTS</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tournaments">Tournaments</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>BECOME A LEGEND</h1>
+      <p>Join Epic Free Fire Tournaments & Win Amazing Prizes</p>
+      <button class="btn btn-primary" onclick="scrollToRegister()">Join Now</button>
+    </div>
+    <div class="hero-background"></div>
+  </section>
+
+  <!-- Tournaments Section -->
+  <section id="tournaments" class="tournaments">
+    <div class="container">
+      <h2 class="section-title">ACTIVE TOURNAMENTS</h2>
+      
+      <div class="tournaments-grid">
+        <!-- Tournament 1 -->
+        <div class="tournament-card">
+          <div class="card-header">
+            <h3>Squad Battle Royale</h3>
+            <span class="badge badge-hot">HOT</span>
+          </div>
+          <div class="card-body">
+            <div class="prize-pool">
+              <span class="label">Prize Pool:</span>
+              <span class="amount">₹50,000</span>
+            </div>
+            <div class="details">
+              <p><strong>👥 Team Size:</strong> 4 Players</p>
+              <p><strong>📅 Date:</strong> Oct 15, 2024</p>
+              <p><strong>🕐 Time:</strong> 6:00 PM - 9:00 PM</p>
+              <p><strong>💰 Entry Fee:</strong> ₹500/Team</p>
+              <p><strong>🎯 Max Teams:</strong> 50</p>
+            </div>
+            <div class="tournament-rules">
+              <h4>Rules:</h4>
+              <ul>
+                <li>Best of 5 matches</li>
+                <li>Respawn enabled in early rounds</li>
+                <li>No camping allowed</li>
+                <li>Fair play policy enforced</li>
+              </ul>
+            </div>
+            <button class="btn btn-register" onclick="selectTournament('Squad Battle Royale', 50000, 500)">Register Team</button>
+          </div>
+        </div>
+
+        <!-- Tournament 2 -->
+        <div class="tournament-card">
+          <div class="card-header">
+            <h3>Ranked Solo Showdown</h3>
+            <span class="badge badge-trending">TRENDING</span>
+          </div>
+          <div class="card-body">
+            <div class="prize-pool">
+              <span class="label">Prize Pool:</span>
+              <span class="amount">₹30,000</span>
+            </div>
+            <div class="details">
+              <p><strong>👤 Team Size:</strong> Solo (1 Player)</p>
+              <p><strong>📅 Date:</strong> Oct 17, 2024</p>
+              <p><strong>🕐 Time:</strong> 7:00 PM - 8:30 PM</p>
+              <p><strong>💰 Entry Fee:</strong> ₹200</p>
+              <p><strong>🎯 Max Players:</strong> 100</p>
+            </div>
+            <div class="tournament-rules">
+              <h4>Rules:</h4>
+              <ul>
+                <li>Single elimination</li>
+                <li>Highest elimination win</li>
+                <li>NO auto-aim allowed</li>
+                <li>All weapons permitted</li>
+              </ul>
+            </div>
+            <button class="btn btn-register" onclick="selectTournament('Ranked Solo Showdown', 30000, 200)">Register Now</button>
+          </div>
+        </div>
+
+        <!-- Tournament 3 -->
+        <div class="tournament-card">
+          <div class="card-header">
+            <h3>Duo Championship</h3>
+            <span class="badge badge-new">NEW</span>
+          </div>
+          <div class="card-body">
+            <div class="prize-pool">
+              <span class="label">Prize Pool:</span>
+              <span class="amount">₹40,000</span>
+            </div>
+            <div class="details">
+              <p><strong>👥 Team Size:</strong> 2 Players</p>
+              <p><strong>📅 Date:</strong> Oct 20, 2024</p>
+              <p><strong>🕐 Time:</strong> 8:00 PM - 9:30 PM</p>
+              <p><strong>💰 Entry Fee:</strong> ₹300/Duo</p>
+              <p><strong>🎯 Max Teams:</strong> 75</p>
+            </div>
+            <div class="tournament-rules">
+              <h4>Rules:</h4>
+              <ul>
+                <li>Best of 3 matches</li>
+                <li>Communicate via game chat</li>
+                <li>Account sharing prohibited</li>
+                <li>Ranked players preferred</li>
+              </ul>
+            </div>
+            <button class="btn btn-register" onclick="selectTournament('Duo Championship', 40000, 300)">Register Duo</button>
+          </div>
+        </div>
+
+        <!-- Tournament 4 -->
+        <div class="tournament-card">
+          <div class="card-header">
+            <h3>Clash Squad Pro</h3>
+            <span class="badge badge-elite">ELITE</span>
+          </div>
+          <div class="card-body">
+            <div class="prize-pool">
+              <span class="label">Prize Pool:</span>
+              <span class="amount">₹1,00,000</span>
+            </div>
+            <div class="details">
+              <p><strong>👥 Team Size:</strong> 4 Players (Squad)</p>
+              <p><strong>📅 Date:</strong> Oct 22-24, 2024</p>
+              <p><strong>🕐 Time:</strong> Multiple Rounds</p>
+              <p><strong>💰 Entry Fee:</strong> ₹1000/Team</p>
+              <p><strong>🎯 Max Teams:</strong> 32</p>
+            </div>
+            <div class="tournament-rules">
+              <h4>Rules:</h4>
+              <ul>
+                <li>Best of 7 matches</li>
+                <li>All weapons restricted</li>
+                <li>Strategic gameplay required</li>
+                <li>Professional streaming</li>
+              </ul>
+            </div>
+            <button class="btn btn-register" onclick="selectTournament('Clash Squad Pro', 100000, 1000)">Register Elite</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Section -->
+  <section id="register" class="registration">
+    <div class="container">
+      <h2 class="section-title">REGISTER FOR TOURNAMENT</h2>
+      
+      <div class="registration-wrapper">
+        <!-- Form -->
+        <div class="form-section">
+          <form id="registrationForm" class="registration-form">
+            <!-- Tournament Selection -->
+            <div class="form-group">
+              <label for="tournament">🎮 Select Tournament *</label>
+              <select id="tournament" required>
+                <option value="">Choose a tournament...</option>
+                <option value="Squad Battle Royale">Squad Battle Royale - ₹50,000 Prize Pool (₹500/Team)</option>
+                <option value="Ranked Solo Showdown">Ranked Solo Showdown - ₹30,000 Prize Pool (₹200)</option>
+                <option value="Duo Championship">Duo Championship - ₹40,000 Prize Pool (₹300/Duo)</option>
+                <option value="Clash Squad Pro">Clash Squad Pro - ₹1,00,000 Prize Pool (₹1000/Team)</option>
+              </select>
+            </div>
+
+            <!-- Team/Player Type -->
+            <div class="form-group">
+              <label for="teamType">👥 Registration Type *</label>
+              <select id="teamType" onchange="updateTeamFields()" required>
+                <option value="">Select type...</option>
+                <option value="solo">Solo Player</option>
+                <option value="duo">Duo Team (2 Players)</option>
+                <option value="squad">Squad Team (4 Players)</option>
+              </select>
+            </div>
+
+            <!-- Team Name -->
+            <div class="form-group">
+              <label for="teamName">🏆 Team/Player Name *</label>
+              <input 
+                type="text" 
+                id="teamName" 
+                placeholder="Enter team name or player nickname" 
+                required
+              />
+            </div>
+
+            <!-- Team Captain/Leader -->
+            <div class="form-group">
+              <label for="captainName">👨‍💼 Captain/Leader Name *</label>
+              <input 
+                type="text" 
+                id="captainName" 
+                placeholder="Captain's full name" 
+                required
+              />
+            </div>
+
+            <!-- Captain UID -->
+            <div class="form-group">
+              <label for="captainUID">🔢 Captain's Free Fire UID *</label>
+              <input 
+                type="text" 
+                id="captainUID" 
+                placeholder="Your Free Fire UID (numeric)" 
+                pattern="[0-9]{1,15}"
+                required
+              />
+            </div>
+
+            <!-- Captain Phone -->
+            <div class="form-group">
+              <label for="captainPhone">📱 Captain's Phone *</label>
+              <input 
+                type="tel" 
+                id="captainPhone" 
+                placeholder="Your contact number" 
+                pattern="[0-9]{10}"
+                required
+              />
+            </div>
+
+            <!-- Captain Email -->
+            <div class="form-group">
+              <label for="captainEmail">✉️ Captain's Email *</label>
+              <input 
+                type="email" 
+                id="captainEmail" 
+                placeholder="your.email@example.com" 
+                required
+              />
+            </div>
+
+            <!-- Team Members (Dynamic) -->
+            <div id="teamMembersContainer"></div>
+
+            <!-- Payment Method -->
+            <div class="form-group">
+              <label for="paymentMethod">💳 Payment Method *</label>
+              <select id="paymentMethod" required>
+                <option value="">Select payment method...</option>
+                <option value="upi">UPI</option>
+                <option value="gpay">Google Pay</option>
+                <option value="phonepe">PhonePe</option>
+                <option value="bank">Bank Transfer</option>
+                <option value="wallet">Digital Wallet</option>
+              </select>
+            </div>
+
+            <!-- Terms & Conditions -->
+            <div class="form-group checkbox">
+              <input type="checkbox" id="terms" required />
+              <label for="terms">
+                I agree to the tournament rules and terms & conditions
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-submit">
+              🚀 SUBMIT REGISTRATION
+            </button>
+          </form>
+        </div>
+
+        <!-- Registration Summary -->
+        <div class="summary-section">
+          <div class="summary-card">
+            <h3>Registration Summary</h3>
+            
+            <div class="summary-item">
+              <span class="label">Tournament:</span>
+              <span class="value" id="summaryTournament">Not selected</span>
+            </div>
+            
+            <div class="summary-item">
+              <span class="label">Prize Pool:</span>
+              <span class="value" id="summaryPrize">-</span>
+            </div>
+            
+            <div class="summary-item">
+              <span class="label">Entry Fee:</span>
+              <span class="value" id="summaryFee">-</span>
+            </div>
+            
+            <div class="summary-item">
+              <span class="label">Registration Type:</span>
+              <span class="value" id="summaryType">Not selected</span>
+            </div>
+            
+            <div class="summary-item">
+              <span class="label">Team Members:</span>
+              <span class="value" id="summaryMembers">-</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="summary-item total">
+              <span class="label">TOTAL PAYABLE:</span>
+              <span class="value" id="summaryTotal">₹0</span>
+            </div>
+
+            <div class="payment-info">
+              <h4>Payment Details</h4>
+              <p><strong>UPI ID:</strong> tournament@freefire</p>
+              <p><strong>Phone:</strong> +91-9876543210</p>
+              <p><strong>Bank:</strong> HDFC Bank</p>
+              <p style="margin-top: 10px; color: #ff6b00; font-size: 12px;">
+                ⚠️ Share payment proof after registration
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">GET IN TOUCH</h2>
+      
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="icon">📞</div>
+          <h3>Phone</h3>
+          <p>+91-9876543210</p>
+          <p>+91-9876543211</p>
+        </div>
+        
+        <div class="contact-card">
+          <div class="icon">✉️</div>
+          <h3>Email</h3>
+          <p>support@freefiretourn.com</p>
+          <p>register@freefiretourn.com</p>
+        </div>
+        
+        <div class="contact-card">
+          <div class="icon">📍</div>
+          <h3>Address</h3>
+          <p>Gaming Hub, Mumbai</p>
+          <p>Maharashtra, India</p>
+        </div>
+        
+        <div class="contact-card">
+          <div class="icon">⏰</div>
+          <h3>Hours</h3>
+          <p>Mon - Fri: 10 AM - 6 PM</p>
+          <p>Sat - Sun: 12 PM - 5 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Free Fire Tournaments. All rights reserved.</p>
+      <p>Follow us: 
+        <a href="#">Facebook</a> | 
+        <a href="#">Instagram</a> | 
+        <a href="#">YouTube</a> | 
+        <a href="#">Discord</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal for Success -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-body">
+        <div class="success-icon">✅</div>
+        <h2>Registration Successful!</h2>
+        <p id="successMessage"></p>
+        <p style="margin-top: 20px; font-size: 14px; color: #666;">
+          You will receive a confirmation email shortly with tournament details and payment instructions.
+        </p>
+        <button class="btn btn-primary" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
